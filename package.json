@@ -1,18 +1,21 @@
 {
   "name": "f1-hub",
   "version": "1.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0 --port $PORT"
+    "preview": "vite preview",
+    "start": "serve dist --listen $PORT"
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "serve": "^14.2.4"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
-    "vite": "^6.0.3"
+    "vite": "^6.4.2"
   }
 }
